@@ -1,0 +1,94 @@
+.gallery-wrapper{
+    .custom-heading{
+        @include main-heading;
+        margin-bottom: 100px;
+    }
+    .gallery{
+        grid-gap: 50px;
+        margin-bottom: 0;
+        @media (max-width: 991px){
+          grid-gap: 30px;
+        }
+        .swiper {
+            width: 100%;
+            &-slide {
+              text-align: center;
+              font-size: 18px;
+              background: #fff;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              border-radius: 20px;
+              img {
+                display: block;
+                width: 100%;
+                object-fit: cover;
+                border-radius: 20px;
+                
+              }
+            }
+            margin-left: auto;
+            margin-right: auto;
+          
+            &-slide {
+              background-size: cover;
+              background-position: center;
+            }
+          }
+          
+          .thumb-slider {
+            @media (max-width: 575px){
+              display: none;
+            }
+            img{
+                height: 300px;
+                @media (max-width: 991px){
+                  height: 150px;
+                }
+            }
+          }
+          
+          .swiper.full-slider {
+            box-sizing: border-box;
+            padding: 10px 0;
+            .swiper-wrapper{
+                height: 600px;
+                @media (max-width: 991px){
+                  height: 300px;
+                }
+            }
+            .swiper-slide{
+                height: 700px;
+                @media (max-width: 991px){
+                  height: 300px;
+                }
+                img{
+                    height: 700px;
+                    border-radius: 20px;
+                    @media (max-width: 991px){
+                      height: 300px;
+                    }
+                }
+            }
+            .swiper-slide-thumb-active {
+              opacity: 1;
+            }
+          }
+          
+    }
+    .gallery-pagination{
+        padding-top: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        @media (max-width: 991px){
+          padding-top: 0;
+          gap: 15px;
+        }
+        svg{
+          width: 50px;
+          height: 50px;
+        }
+    }
+}

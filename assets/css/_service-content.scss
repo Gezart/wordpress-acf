@@ -1,0 +1,25 @@
+.service-content-wrapper{
+    background-color: $first_color;
+    padding: 150px 0;
+    @media (max-width: 991px){
+        padding: 43px 5px;
+    }
+    .custom-heading{
+        @include main-heading;
+        margin-bottom: 50px;
+        h2, p{
+            color: #fff;
+        }
+        h2{
+            &::after, &::before{
+                background-color: #fff;
+            }
+        }
+    }
+    .description{
+        color: #fff;
+        font-size: 18px;
+        font-weight: 400;
+        text-align: center;
+    }
+}

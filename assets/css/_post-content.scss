@@ -1,0 +1,39 @@
+.post-content{
+    .custom-heading{
+        @include main-heading;
+        margin-bottom: 100px;
+        margin-top: 150px;
+        @media (max-width: 991px){
+            margin-top: 50px;
+        }
+        h2{
+            margin-bottom: 0;
+           
+        }
+    }
+    .post-image{
+        margin-bottom: 76px;
+        @media (max-width: 991px){
+            margin-bottom: 30px;
+        }
+       img{
+        width: 100%;
+        height: 700px;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 20px;
+        @media (max-width: 991px){
+            height: 300px;
+        }
+       }
+    }
+    .post-description{
+        h1,h2,h3,h4,h5,h6,p{
+            margin-bottom: 30px;
+        }
+        @include paragraph18;
+        @media (max-width: 991px){
+            margin-bottom: 50px;
+        }
+    }
+}

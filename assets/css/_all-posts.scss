@@ -1,0 +1,9 @@
+.blogs-wrapper{
+    margin-top: 150px;
+    @media (max-width: 1340px){
+        margin-top: 50px;
+    }
+    .custom-heading{
+        @include main-heading;
+    }
+}

@@ -1,0 +1,69 @@
+.video-wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    @media (max-width: 991px){
+        grid-template-columns: 1fr;
+        margin: 50px 0;
+    }
+    .container{
+        margin: 0;
+    }
+    #my-video{
+        width: 100%;
+        height: 350px;
+        border-radius: 20px;
+    }
+    .cs-image{
+        border-radius: 20px;
+        width: 100%;
+    }
+    .vjs-poster{
+        img{
+            object-fit: cover;
+            border-radius: 20px;
+        }
+    }
+    .vjs-big-play-button{
+        background-color: #fff !important;
+        width: 70px !important;
+        height: 70px !important;
+        border-radius: 50% !important;
+        
+    }
+    .vjs-icon-placeholder{
+        &::before{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 50px;
+        }
+    }
+    .video-content{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 100%;
+        h3{
+            font-size: 25px;
+            color: $first_color;
+            font-weight: 700;
+            margin-bottom: 20px;
+            max-width: 60%;
+            @media (max-width: 991px){
+                font-size: 18px;
+                text-align: center;
+                max-width: 100%;
+
+            }
+        }
+        p{
+            @include paragraph18;
+            @media (max-width: 991px){
+                text-align: center;
+            }
+        }
+    }
+}

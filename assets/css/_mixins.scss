@@ -1,0 +1,128 @@
+@mixin button {
+    background-color: $first_color;
+    color: #fff;
+    border-radius: 0;
+    outline: none;
+    border: none;
+    padding: 18px 55px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    font-family: $fontFamily;
+    border: 1px solid  #019246;
+    min-width: 250px;
+    transition: 0.4s;
+    @media (max-width: 991px){
+        font-size: 18px;
+        padding: 14px 55px;
+    }
+    @media (max-width: 400px){
+        min-width: unset;
+        padding: 18px;
+    }
+    &:hover{
+    	border-radius: 0;
+        background-color: #fff;
+        color: $first_color;
+    }
+}
+
+
+@mixin heading1{
+    font-size: 40px;
+    font-weight: 700;
+    @media (max-width: 991px){
+        font-size: 20px;
+    }
+}
+@mixin paragraph18{
+    font-size: 18px;
+    font-weight: 300;
+    color: #202020;
+    @media (max-width: 991px){
+        font-size: 14px;
+    }
+    @media (max-width: 575px){
+        font-size: 14px;
+    }
+}
+@mixin main-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 70px;
+    @media (max-width: 991px){
+        margin-bottom: 30px;
+    }
+    h2{
+        font-size: 40px;
+        font-weight: 700;
+        color: #202020;
+        margin-bottom: 25px;
+        position: relative;
+        @media (max-width: 991px){
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+        &::before, &::after{
+            position: absolute;
+            content: '';
+            top: 15px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: $first_color;
+            @media (max-width: 991px){
+                width: 7px;
+                height: 7px;
+                top: 7px;
+            }
+        }
+        &::before{
+            left: -42px;
+            @media (max-width: 991px){
+                left: -10px;
+            }
+        }
+        &::after{
+            right: -42px;
+            @media (max-width: 991px){
+                right: -10px;
+            }
+        }
+    }
+    p{
+        @include paragraph18;
+        color: $first_color;
+        font-weight: 400;
+        @media (max-width: 991px){
+            font-size: 14px;
+        }
+        @media (max-width: 575px){
+            font-size: 14px;
+        }
+    }
+}
+.goto-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 75px;
+    @media (max-width: 991px){
+        margin-top: 30px;
+    }
+    button{
+        @include button;
+        border: 1px solid  #019246;
+        color: $first_color;
+        background-color: #fff;
+        min-width: 400px;
+        transition: 0.4s;
+        &:hover{
+        	 background-color: $first_color;
+             color: #fff;
+        }
+    }
+}

@@ -1,0 +1,41 @@
+.text-image-wrapper{
+    margin-bottom: 200px;
+    @media (max-width: 991px){
+        margin-bottom: 50px;
+    }
+    .custom-heading{
+        @include main-heading;
+        margin-bottom: 150px;
+    }
+    .image{
+        img{
+            border-radius: 20px;
+            width: 100%;
+        }
+    }
+    .text-image{
+        display: grid;
+        grid-template-columns: repeat(2 ,1fr);
+        grid-gap: 68px;
+        @media (max-width: 991px){
+            grid-template-columns: 1fr;
+            grid-gap: 20px;
+        }
+        .content{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    }
+    p{
+        @include paragraph18;
+		margin-bottom: 30px;
+    }
+    button{
+        @include button;
+        margin-top: 30px;
+        @media (max-width: 575px){
+            min-width: 100%;
+        }
+    }
+}

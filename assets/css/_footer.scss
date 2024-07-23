@@ -1,0 +1,155 @@
+.site-footer{
+    padding: 121px 0;
+    background-color:#fff;
+    @media (max-width: 767px){
+        padding: 50px 0;
+    }
+    .footer-wrapper{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        @media (max-width: 767px){
+            grid-template-columns: 1fr;
+        }
+        .footer-column{
+            @media (max-width: 767px){
+                margin-bottom: 50px;
+            }
+            h3{
+                @include heading1;
+                font-size: 25px;
+                color: $first_color;
+                position: relative;
+                margin-bottom: 45px;
+                @media (max-width: 767px){
+                    text-align: center;
+                    margin-bottom: 20px;
+                }
+                &::after{
+                    content: '';
+                    position: absolute;
+                    bottom: -20px;
+                    left: 0;
+                    width: 118px;
+                    height: 5px;
+                    background-color: $first_color;
+                    @media (max-width: 767px){
+                        bottom: -10px;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        height: 2px;
+                    }
+                }
+            }
+            .footer-menu{
+                display: flex;
+                flex-direction: column;
+                a{
+                    @include paragraph18;
+                    font-weight: 600;
+                    margin-bottom: 10px;
+                    @media (max-width: 767px){
+                        text-align: center;
+                    }
+                }
+            }
+            .footer-contacts{
+                display: flex;
+                flex-direction: column;
+                @media (max-width: 767px){
+                    width: 180px;
+                    margin: auto;
+                }
+                a{
+                    @include paragraph18;
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 10px;
+                    @media (max-width: 767px){
+
+                    }
+                    svg, img{
+                        margin-right: 30px;
+                        @media (max-width: 767px){
+                            width: 20px;
+                            height: 20px;
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+            .social-media{
+                display: flex;
+                align-items: center;
+                margin-top: 20px;
+                @media (max-width: 767px){
+                    display: none;
+                }
+                a{
+                    margin-right: 16px;
+                }
+            }
+        }
+    }
+}
+.get-quote{
+    background-color: $first_color;
+    padding: 78px 0;
+    @media (max-width: 767px){
+        padding: 24px 0;
+    }
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @media (max-width: 767px){
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .content{
+            display: flex;
+            flex-direction: column;
+            h3{
+                @include heading1;
+                color: #fff;
+                margin-bottom: 20px;
+                @media (max-width: 767px){
+                    margin-bottom: 5px;
+                }
+            }
+            p{
+                @include paragraph18;
+                color: #fff;
+                @media (max-width: 767px){
+                    margin-bottom: 20px;
+                }
+                    
+                }
+        }
+        button{
+            @include button;
+            background-color: #fff;
+            color: $first_color;
+            min-width: 250px;
+        }
+    }   
+}
+.copyright{
+    padding: 25px;
+    text-align: center;
+    background-color: $first_color;
+    @media (max-width: 767px){
+        padding: 18px;
+    }
+    p{
+        @include paragraph18;
+        font-size: 16px;
+        color: #fff;
+        font-weight: 400;
+    }
+}
+.page-id-359, .page-id-105, .single-post{
+    .get-quote{
+        display: none;
+    }
+}

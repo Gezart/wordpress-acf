@@ -1,0 +1,6 @@
+12/08/23 10:10:21: main.scss - parse error: failed at `calc(100% - 72px)` C:\xampp\htdocs\greenlofts\wp-content\themes\greenlofts\assets\css/_all-projects.scss on line 152, at column 17
+12/08/23 1:02:13: main.scss - Undefined mixin paragrapgh18: _text_image.scss on line 10, at column 9
+Call Stack:
+#0 import _text_image.scss main.scss on line 26
+12/15/23 1:15:08: main.scss - unexpected }: failed at `` /home/customer/www/greenlofts.co.uk/public_html/wp-content/themes/greenlofts/assets/css/_projects.scss on line 128, at column 0
+12/15/23 1:15:22: main.scss - unexpected }: failed at `` /home/customer/www/greenlofts.co.uk/public_html/wp-content/themes/greenlofts/assets/css/_projects.scss on line 128, at column 0
